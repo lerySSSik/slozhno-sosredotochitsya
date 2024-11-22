@@ -4,9 +4,45 @@
   переключая тему
 */
 
+
 .page.theme_light {
+  --background-image: url("../images/cover-image-light.png");
+  --accent-color:  #FFC2E6;
+  --background-shadow: #FF0070;
+  --background-decor: #FF8DCB;
+  --color-text: #353430;
+  --bc: #FFEEF6;
+  --title_color: #353430;
+  --text-size: 18px;
+  --line-height-accent: 129.53px;
+  --line-height-button: 18px;
+  --line-height-text: 23.4px;
+  --font-size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --decoration-color: #353430;
+  --visibility-light: hidden;
+
+ 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+--background-image: url("../images/cover-image-light.png");
+--accent-color:  #FFC2E6;
+--background-shadow: #FF0070;
+--background-decor: #FF8DCB;
+--bc: #FFEEF6;
+--text-size: 18px;
+--line-height-accent: 129.53px;
+--line-height-button: 18px;
+--line-height-text: 23.4px;
+--font-size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+--font-size-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+--decoration-color: #353430;
+--visibility-light: hidden;
+  }
 }
