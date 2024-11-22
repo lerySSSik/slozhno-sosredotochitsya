@@ -5,6 +5,9 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--bc);
+  background-image: var(--background-image);
+   background-attachment: fixed;
+   background-position: center;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -31,6 +34,8 @@
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
   border: 1px solid var(--background-shadow-opacity);
+  inline-size: 70px;
+  block-size: 26px;
 }
 
 .header__theme-menu-button:focus {
