@@ -3,10 +3,6 @@
   и их переопределение под различные устройства
 */
 
-body {
-  font-family: var(--accent-font);
-}
-
 :root {
   --color-button: #353430;
   --background-image: url("../images/cover-image-light.png");

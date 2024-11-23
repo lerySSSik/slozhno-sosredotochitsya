@@ -6,13 +6,17 @@
   align-items: center;
   background-color: var(--bc);
   background-image: var(--background-image);
-   background-attachment: fixed;
-   background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 /* --------------------button---------------------- */
 .header__theme-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background-color: inherit;
   font-family: var(--accent-font);
@@ -21,15 +25,12 @@
   font-size: var(--text-size);
   cursor: pointer;
   color: var(--color-button);
+  inline-size: 70px;
+  block-size: 26px;
 }
 
 .header__theme-menu-button_active {
-  display: flex;
   outline: 1px solid var(--background-button);
-  inline-size: 70px;
-  block-size: 26px;
-  align-items: center;
-  justify-content: center;
 }
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
@@ -43,13 +44,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border: none;
-  outline: none;
   border-bottom: 1px solid var(--background-button);
 }
 
 .link_world:hover {
-  border-bottom: 1px solid var(--color);
+  border-bottom: 1px solid currentColor;
 }
 
 .link_world:focus {
@@ -57,7 +56,7 @@
 }
 
 .link_world:focus-visible {
-  outline: 1px solid var(--color);
+  outline: 1px solid currentColor;
 }
 /* --------------------header---------------------- */
 
@@ -67,10 +66,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: column;
   align-items: start;
-  background-image: var(--background-image);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+
 }
 
 .header__theme-menu {
@@ -82,8 +78,8 @@
 .header__theme-menu-list {
   display: flex;
   list-style-type: none;
-  gap: 20px;
-  margin: 21px 10px 0 0;
+  gap: 10px;
+  margin: 20px 0 0 0;
 }
 
 
@@ -98,14 +94,15 @@
 }
 
 .header_text {
-  justify-self: center;
+
   max-width: 491px;
+  min-inline-size: 71px;
   grid-column: 1 / 3;
   margin-left: 495px;
-  letter-spacing: 1.2px;
   line-height: var(--line-height-text);
   font-weight: var(--font-weight-bold);
   margin-top: 51px;
+  font-size: var(--text-size);
 }
 
 .title-decor {
@@ -121,6 +118,7 @@
 .decoration-header {
   position: relative; 
   block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .decorated-zone::before {
@@ -176,9 +174,15 @@
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: column;
   padding: 10px;
-  margin: 40px 0 48px 0;
 }
 /* --------------concentrate----------------- */
+.concentrate:first-child {
+  margin-top: 40px;
+}
+
+.concentrate:last-child{
+  margin-bottom: 40px;
+}
 
 .concentrate {
   display: grid;
@@ -186,7 +190,7 @@
   grid-column: 2 / 3;
   padding: 10px;
   row-gap: 20px;
-  
+  margin-top: 60px;
 }
 
 .concentrate__title {
@@ -204,7 +208,8 @@
   grid-column: 2 / 4;
   grid-auto-flow: row;
   grid-template-rows: min-content auto;
-  margin: 0 0 40px 5px;
+  margin-left: 5px;
+  row-gap: 13px;
 }
 
 .block_title {
@@ -217,9 +222,7 @@
 .block_text, .link_world {
   color: var(--color);
   line-height: var(--line-height-text);
-  margin: 0px;
-  letter-spacing: 1.2px;
-  margin: 10px 0 20px 0;
+  font-size: var(--text-size);
 }
 
 .link_world {
@@ -234,8 +237,8 @@
   grid-column: 1 / 4;
   grid-auto-flow: column;
   grid-template-rows: min-content auto;
+  row-gap: 10px;
   column-gap: 20px;
-  margin-bottom: 40px;
 }
 
 .block_article{
@@ -245,14 +248,21 @@
   font-weight: var(--font-weight-normal);
   letter-spacing: 1px;
 }
-/* ----------------concentrate_block----------------- */
-
+/* ----------------concentrate_roster----------------- */
+.concentrate_roster {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-auto-flow: row;
+  grid-template-rows: min-content auto;
+  margin-left: 5px;
+  row-gap: 10px;
+  }
 .distance_block {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .distance {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 /* ----------------concentrate_grid----------------- */
@@ -308,7 +318,6 @@ img {
 }
 
 .footer_title {
-  margin: 0 0 12px 0;
   justify-self: center;
   align-self: center;
   color: var(--accent-color);
@@ -316,39 +325,38 @@ img {
   text-shadow: 4px 4px 0 var( --background-shadow);
 }
 
+.decoration-footer {
+  position: relative;
+  block-size: 100vh;
+  min-block-size: 668px;
+}
 
 /* ------------------media------------------ */
 
 @media (width <= 768px) {
   .header__theme-menu {
-    grid-column: 2 / 3;
     justify-self: end;
     margin: 179px 8px 0 0;
   }
 
   .header__theme-menu-list {
-    margin: 11px 3px 0 0;
-    display: flex;
+    margin: 11px 3px 60px 0;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
   }
 
   .header_text {
     grid-column: 2 / 3;
-    margin: 0px;
-    align-self: start;
-    max-height: 117px;
     max-width: 367px;
-    margin: 40px 10px 0 0;
+    margin: 37px 10px 0 0;
   }
 
   .header_title {
-    margin: 101px 0 0 -5px;
+    margin: 100px 0 0 0;
   }
 
   .contentrate_list {
     grid-auto-flow: row;
+    row-gap: 14px;
   }
 
   .concentrate__title {
@@ -356,20 +364,28 @@ img {
   }
 
   .concentrate_block { 
-    margin-left: 13px;
+    margin-left: 15px;
   }
 
   .distance_title {
-    margin: 5px 0 10px 0;
+    margin: 0px 0 10px 0;
+  }
+
+  .distance {
+    margin-top: 20px;
   }
 
   .distance_block {
     margin-top: 5px;
   }
 
+  .concentrate_roster {
+    margin-left: 15px;
+    row-gap: 5px;
+  }
+
   .grid_pic {
     margin-top: 18px;
-    gap: 12px;
     max-inline-size: 732px;
     height: 780px;
   }
@@ -381,6 +397,11 @@ img {
 
   .footer_title {
     margin: 0 0 0 0;
+  }
+
+  .decoration-footer {
+    min-inline-size: 728px;
+    min-block-size: 1030px;
   }
 }
 
@@ -404,28 +425,28 @@ img {
 
   .header_text {
     inline-size: 358px;
-    justify-self: auto;
     margin: 40px 7px 0 0;
   }
   
   .header__theme-menu {
-    grid-column: 2 / 3;
-    justify-self: end;
     align-self: end;
     margin-top: 0;
     margin-right: 0;
   }
 
   .header__theme-menu-list{
-    margin: 0 10px 57px 0;
+    margin: 0 10px 50px 0
   }
 
   .main {
-    padding: 2px;
-    margin: 30px 0 -12px 0;
+    display: flex;
+    flex-direction: column;
   }
-
-  .contentrate {
+  .concentrate:first-child {
+    margin-top: 20px;
+  }
+  
+  .concentrate {
     display: flex;
     flex-direction: column;
   }
@@ -458,6 +479,7 @@ img {
 
   .concentrate_img {
     margin: 6px 0 -4px 0;
+    /* убрать отриц отступ */
   }
 
   .footer {
