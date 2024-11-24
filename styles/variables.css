@@ -6,9 +6,12 @@
 :root {
   --color-button: #353430;
   --background-image: url("../images/cover-image-light.png");
-  --accent-font: 'IBM Plex mono', sans-serif;
+  --accent-font: 'IBM Plex mono', monospace;
   --bc: #FFEEF6;
+  --color-block: #353430;
   --accent-color:  #FFC2E6;
+  --color-text-button: #353430;
+  --color-title: #353430;
   --color: #353430;
   --background-shadow: #FF0070;
   --background-button: #353430;
