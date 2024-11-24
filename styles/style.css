@@ -174,14 +174,16 @@
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: column;
   padding: 10px;
+  background-color: var(--bc);
 }
 /* --------------concentrate----------------- */
 .concentrate:first-child {
   margin-top: 50px;
 }
 
-.concentrate:last-child{
+.concentrate:last-child {
   margin-bottom: 40px;
+
 }
 
 .concentrate {
@@ -202,7 +204,7 @@
   inline-size: 330px;
 }
 
-.concentrate_block{
+.concentrate_block {
   display: grid;
   grid-column: 2 / 4;
   grid-auto-flow: row;
@@ -243,13 +245,14 @@
   gap: 20px;
 }
 
-.block_article{
+.block_article {
   color: var(--color-block);
   margin-top: 8px;
   line-height: var(--line-height-text);
   font-weight: var(--font-weight-normal);
   letter-spacing: 1px;
 }
+
 /* ----------------concentrate_roster----------------- */
 .concentrate_roster {
   display: grid;
@@ -355,6 +358,7 @@ img {
   .header_title {
     margin: 100px 0 0 0;
   }
+
   .concentrate{
     margin-top: 83px;
   }
@@ -376,6 +380,7 @@ img {
   .concentrate_block { 
     margin-left: 15px;
     row-gap: 10px;
+
   }
 
   .distance_title {
@@ -446,7 +451,7 @@ img {
     margin-right: 0;
   }
 
-  .header__theme-menu-list{
+  .header__theme-menu-list {
     margin: 0 10px 50px 0
   }
 
@@ -486,7 +491,7 @@ img {
     row-gap: 5px;
   }
 
-  .distance_block{
+  .distance_block {
     margin-top: 8px;
   }
 
