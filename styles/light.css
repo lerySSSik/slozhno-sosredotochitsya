@@ -7,13 +7,17 @@
 .page.theme_light {
   --background-image: url("../images/cover-image-light.png");
   --accent-color: #ffc2e6;
-  --background-shadow: #ff0070;
+  --background-shadow: #FF0070;
   --background-decor: #ff8dcb;
   --color-text: #353430;
   --bc: #ffeef6;
   --title_color: #353430;
   --decoration-color: #353430;
   --visibility-light: hidden;
+  --color-title: #353430;
+  --color: #353430;
+  --color-button: #353430;
+  --background-button: #32312D;
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -21,14 +25,3 @@
   */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-image: url("../images/cover-image-light.png");
-    --accent-color: #ffc2e6;
-    --background-shadow: #ff0070;
-    --background-decor: #ff8dcb;
-    --bc: #ffeef6;
-    --decoration-color: #353430;
-    --visibility-light: hidden;
-  }
-}
