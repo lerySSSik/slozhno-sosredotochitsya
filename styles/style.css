@@ -96,7 +96,7 @@
   align-self: center;
   justify-self: end;
   margin-right: 19px;
-  margin-top: -14px;
+  margin-top: -24px;
 }
 
 .title-decor {
@@ -136,7 +136,7 @@
 
 .header_decor-rec {
   position: absolute;
-  margin: 20px 32px 0 0;
+  margin: 20px 50px 0 0;
   color: var(--background-shadow);
   text-transform: uppercase;
   inset-inline-end: 0;
@@ -166,7 +166,7 @@
 }
 
 .concentrate:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   display: flex;
   justify-content: space-around;
 }
@@ -191,7 +191,7 @@
   grid-column: 2 / 4;
   grid-auto-flow: row;
   grid-template-rows: min-content auto;
-  margin-left: 5px;
+  margin-left: 7px;
   row-gap: 13px;
 }
 
@@ -228,10 +228,10 @@
 
 .block_article {
   color: var(--color-block);
+  font-size: var(--text-size);
   margin-top: 8px;
   line-height: var(--line-height-text);
   font-weight: var(--font-weight-normal);
-  letter-spacing: 1px;
 }
 
 /* ----------------concentrate_roster----------------- */
@@ -239,13 +239,18 @@
   display: grid;
   grid-column: 2 / 4;
   grid-auto-flow: row;
-  margin-left: 5px;
+  margin-left: 7px;
   row-gap: 10px;
 }
 
 .distance_block {
-  margin-top: 10px;
+  margin-top: 5px;
 }
+
+.distance_title {
+  margin-top: 5px;
+}
+
 
 .distance {
   margin-top: 10px;
@@ -253,7 +258,7 @@
 
 /* ----------------concentrate_grid----------------- */
 .distance_card {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .distance_card_grid {
@@ -333,7 +338,7 @@ img {
 
   .header_text {
     max-width: 365px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .concentrate {
@@ -365,7 +370,7 @@ img {
   }
 
   .distance {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .distance_block {
@@ -378,7 +383,7 @@ img {
 
   .concentrate_roster {
     margin-left: 15px;
-    row-gap: 5px;
+    row-gap: 7px;
   }
 
   .grid_pic {
@@ -414,6 +419,10 @@ img {
     left: 13px;
   }
 
+  .header_decor-rec  {
+    margin: 10px 41px 0 0;
+  }
+
   .header_title {
     font-size: var(--font-size-title-mobile);
     line-height: 94px;
@@ -442,7 +451,7 @@ img {
   }
 
   .concentrate:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .concentrate {
@@ -459,13 +468,13 @@ img {
   .contentrate_list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
     margin-top: 0px;
   }
 
   .concentrate_roster {
     margin-left: 0px;
-    row-gap: 5px;
+    row-gap: 7px;
   }
 
   .distance_block {
@@ -476,13 +485,13 @@ img {
     max-width: 355px;
   }
   .distance_card {
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
 
   .grid_pic {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     margin-top: 11px;
   }
 
