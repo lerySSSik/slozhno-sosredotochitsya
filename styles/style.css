@@ -96,7 +96,7 @@
   align-self: center;
   justify-self: end;
   margin-right: 19px;
-  margin-top: -24px;
+  margin-bottom: 25px;
 }
 
 .title-decor {
@@ -324,7 +324,6 @@ img {
 @media (width <= 768px) {
   .header {
     min-block-size: 768px;
-    block-size: 100vh;
   }
   .header__theme-menu {
     justify-self: end;
@@ -338,12 +337,11 @@ img {
 
   .header_text {
     max-width: 365px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
   }
 
   .concentrate {
     margin-top: 82px;
-    row-gap: 20px;
   }
 
   .concentrate__title {
@@ -357,7 +355,6 @@ img {
   .contentrate_list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .concentrate_block {
@@ -371,14 +368,6 @@ img {
 
   .distance {
     margin-top: 15px;
-  }
-
-  .distance_block {
-    margin-top: 5px;
-  }
-
-  .distance_card {
-    margin-bottom: 10px;
   }
 
   .concentrate_roster {
@@ -396,11 +385,6 @@ img {
   .footer_title {
     margin: 0 0 0 0;
   }
-
-  .decoration-footer {
-    min-inline-size: 728px;
-    min-block-size: 1030px;
-  }
 }
 
 @media (width <= 520px) {
@@ -411,7 +395,7 @@ img {
 
   .header {
     min-inline-size: 375px;
-    min-block-size: 668px;
+    min-block-size: 100%;
   }
 
   .decorated-zone::after {
@@ -462,7 +446,6 @@ img {
 
   .concentrate_block {
     margin: 0;
-    row-gap: 13px;
   }
 
   .contentrate_list {
